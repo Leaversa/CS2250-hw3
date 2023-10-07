@@ -34,7 +34,7 @@ body {
     flex-direction: column;
     gap: 10px;
 }
-.hidden {
+.hidden-button {
     width:100%;
     padding:15px;
 }
@@ -59,7 +59,13 @@ button:hover {
     background-color: #555;
 }
 
-.clear-button, .equals-button {
+.equals-button {
+    width:300%;
+}
+.clear-button, .equals-button, .operator-button {
     background-color: #ff9800;
     color: #333;
+}
+.clear-button:hover, .equals-button:hover, .operator-button:hover {
+    background-color: #ff7800;
 }

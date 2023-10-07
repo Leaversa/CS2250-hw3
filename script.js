@@ -24,7 +24,7 @@ function calculatorParser(s) {
       curr = curr * 10 + Number(c);
     }
 
-    // if reach the end of the string or encounter an operator
+    // if reach the last number or encounter an operator
     // Use includes to check operators and avoid or statements
     if (i === s.length - 1 || "+-*/".includes(c)) {
       if (op === "+") {
@@ -43,8 +43,6 @@ function calculatorParser(s) {
       op = c;
     }
   }
-  console.log(result, acc, curr, op);
-  // add the last number to the result
   result += acc;
   return result;
 }
